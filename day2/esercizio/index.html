@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   </head>
   <body>
+    <!--Esercizio 1,2-->
     <nav class="navbar navbar-expand-lg bg-light collapse-navbar mb-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -31,19 +32,21 @@
         <div class="navbar-collapse collapse" id="collapseExample">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Home</a>
+              <a class="nav-link text-dark" href="#btnIntroduction">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Saldi</a>
+              <a class="nav-link text-dark" href="#btnSaldi">Saldi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Welcome Summer</a>
+              <a class="nav-link text-dark" href="#btnWelcome"
+                >Welcome Summer</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Last Minute</a>
+              <a class="nav-link text-dark" href="#btnOfferta">Last Minute</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Recensioni</a>
+              <a class="nav-link text-dark" href="#btnRecensioni">Recensioni</a>
             </li>
           </ul>
           <div class="ms-auto">
@@ -62,14 +65,31 @@
         </div>
       </div>
     </nav>
+    <!--Esercizio 3-->
     <div class="container">
-      <section class="bg-light py-5">
+      <button class="btn btn-primary mb-4" type="button" onclick="conta()">Destinazioni Disponibili</button>
+      <!--
+      <button class="btn btn-primary mb-4" type="button" onclick="rimuovi()">Nascondi Destinazioni Disponibili</button>
+      -->
+      <button
+        class="btn btn-primary d-block mb-4"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#introduction"
+        aria-expanded="false"
+        aria-controls="introduction"
+        id="btnIntroduction"
+      >
+        Home: Nascondi elemento
+      </button>      
+      <section class="bg-light py-5 mb-4 collapse.show" id="introduction">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
               <h1 class="display-4">Viaggit</h1>
               <p class="lead font-italic">
-                Viaggit ti accompagnerà alla scoperta delle isole paradisiache del Pacifico!
+                Viaggit ti accompagnerà alla scoperta delle isole paradisiache
+                del Pacifico!
               </p>
               <a href="#" class="btn btn-lg btn-primary">Prenota ora</a>
             </div>
@@ -83,7 +103,20 @@
           </div>
         </div>
       </section>
-      <section class="section-saldi">
+
+      <!--Esercizio 4-->
+      <button
+        class="btn btn-primary d-block mb-4"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#saldi"
+        aria-expanded="false"
+        aria-controls="saldi"
+        id="btnSaldi"
+      >
+        Saldi: Nascondi elemento
+      </button>
+      <section class="section-saldi collapse.show" id="saldi">
         <div class="row">
           <div class="col-12">
             <h2 class="section-title">Saldi</h2>
@@ -91,155 +124,414 @@
         </div>
 
         <div class="row">
-          <div class="col-6 col-md-4 col-lg-3 card px-0 m-2 border-2 border-primary">
-            <img
-              src="./assets/img/escursione-atollo.jpg"
-              class="card-img-top"
-              alt="Destinazione 1"
-              height="170px"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Papua Nuova Guinea</h5>
-              <p class="card-text">Gioiello del Pacifico</p>
-              <a href="#" class="btn btn-primary">Scopri di più</a>
+          <div class="col-6 col-md-4 col-lg-3 pb-3 border-2 border-primary">
+            <div class="card article">
+              <img
+                src="./assets/img/escursione-atollo.jpg"
+                class="card-img-top"
+                alt="Destinazione 1"
+                height="170px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Papua Nuova Guinea</h5>
+                <p class="card-text">Gioiello del Pacifico</p>
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+              </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3 card px-0 m-2 border-2 border-primary">
-            <img
-              src="./assets/img/giappone-tokyo-tempio-panorama.jpeg"
-              class="card-img-top"
-              alt="Destinazione 2"
-              height="170px"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Tokyo</h5>
-              <p class="card-text">Il paese del sol levante</p>
-              <a href="#" class="btn btn-primary">Scopri di più</a>
+          <div class="col-6 col-md-4 col-lg-3 pb-3 border-2 border-primary">
+            <div class="card article">
+              <img
+                src="./assets/img/giappone-tokyo-tempio-panorama.jpeg"
+                class="card-img-top"
+                alt="Destinazione 2"
+                height="170px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Tokyo</h5>
+                <p class="card-text">Il bel paese del sol levante</p>
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+              </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3 card px-0 m-2 border-2 border-primary">
-            <img
-              src="./assets/img/download.jpg"
-              class="card-img-top"
-              alt="Destinazione 3"
-              height="170px"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Fiji</h5>
-              <p class="card-text">L'arcipelago delle 3000 isole</p>
-              <a href="#" class="btn btn-primary">Scopri di più</a>
+          <div class="col-6 col-md-4 col-lg-3 pb-3 border-2 border-primary">
+            <div class="card article">
+              <img
+                src="./assets/img/download.jpg"
+                class="card-img-top"
+                alt="Destinazione 3"
+                height="170px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Fiji</h5>
+                <p class="card-text">L'arcipelago delle oltre 3000 isole</p>
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+              </div>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3 card px-0 m-2 border-2 border-primary">
-            <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Hawaai</h5>
-              <p class="card-text">Il paradiso tropicale</p>
-              <a href="#" class="btn btn-primary">Scopri di più</a>
+          <div
+            class="col-6 col-md-4 col-lg-3 d-md-none d-lg-block pb-3 border-2 border-primary"
+          >
+            <div class="card article">
+              <img
+                src="./assets/img/hawaai.jpg"
+                class="card-img-top"
+                alt="Destinazione 4"
+                height="170px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Hawaai</h5>
+                <p class="card-text">Il paradiso tropicale negli USA</p>
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="container">
+      <!--Esercizio 5-->
+      <button
+        class="btn btn-primary d-block mb-4"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target=".multi-collapse"
+        aria-expanded="false"
+        aria-controls="welcomeSummer giorno"
+        id="btnWelcome"
+      >
+        Welcome Summer: Nascondi elemento
+      </button>
+      <section class="collapse.show multi-collapse" id="welcomeSummer">
+        <div class="container px-0">
           <div class="row">
-            <div class="col-12 px-0">
+            <div class="col-12">
               <h2 class="section-title">Welcome Summer</h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-6 col-lg-3 col-xl-2 card px-0 m-2 border-0">
-              <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Hawaai</h5>
-                <p class="card-text">Il paradiso tropicale</p>
-                <a href="#" class="btn btn-primary">Scopri di più</a>
+            <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+              <div class="card shadow-lg article">
+                <img
+                  src="./assets/img/escursione-atollo.jpg"
+                  class="card-img-top"
+                  alt="Destinazione 1"
+                  height="140px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Papua Nuova Guinea</h5>
+                  <p class="card-text">Gioiello del Pacifico</p>
+                  <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 col-xl-2 card px-0 m-2 border-0">
-              <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Hawaai</h5>
-                <p class="card-text">Il paradiso tropicale</p>
-                <a href="#" class="btn btn-primary">Scopri di più</a>
+            <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+              <div class="card shadow-lg article">
+                <img
+                  src="./assets/img/giappone-tokyo-tempio-panorama.jpeg"
+                  class="card-img-top"
+                  alt="Destinazione 4"
+                  height="140px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Giappone</h5>
+                  <p class="card-text">Il bel paese del sol levante</p>
+                  <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 col-xl-2 card px-0 m-2 border-0">
-              <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Hawaai</h5>
-                <p class="card-text">Il paradiso tropicale</p>
-                <a href="#" class="btn btn-primary">Scopri di più</a>
+            <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+              <div class="card shadow-lg article">
+                <img
+                  src="./assets/img/download.jpg"
+                  class="card-img-top"
+                  alt="Destinazione 1"
+                  height="140px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Fiji</h5>
+                  <p class="card-text">L'arcipelogo delle 3000 isole</p>
+                  <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 col-xl-2 card px-0 m-2 border-0">
-              <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Hawaai</h5>
-                <p class="card-text">Il paradiso tropicale</p>
-                <a href="#" class="btn btn-primary">Scopri di più</a>
+            <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+              <div class="card shadow-lg article">
+                <img
+                  src="./assets/img/hawaai.jpg"
+                  class="card-img-top"
+                  alt="Destinazione 4"
+                  height="140px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Hawaai</h5>
+                  <p class="card-text">Il paradiso tropicale USA</p>
+                  <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 col-xl-2 card px-0 m-2 border-0">
-              <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Hawaai</h5>
-                <p class="card-text">Il paradiso tropicale</p>
-                <a href="#" class="btn btn-primary">Scopri di più</a>
+            <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+              <div class="card shadow-lg article">
+                <img
+                  src="./assets/img/escursione-atollo.jpg"
+                  class="card-img-top"
+                  alt="Destinazione 4"
+                  height="140px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Papua Nuova Guinea</h5>
+                  <p class="card-text">Gioiello del Pacifico</p>
+                  <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
               </div>
             </div>
-            <div class="col-6 col-lg-3 col-xl-2 card px-0 m-2 border-0">
-              <img
-              src="./assets/img/hawaai.jpg"
-              class="card-img-top"
-              alt="Destinazione 4"
-              height="170px"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">Hawaai</h5>
-                <p class="card-text">Il paradiso tropicale</p>
-                <a href="#" class="btn btn-primary">Scopri di più</a>
+            <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
+              <div class="card shadow-lg article">
+                <img
+                  src="./assets/img/giappone-tokyo-tempio-panorama.jpeg"
+                  class="card-img-top"
+                  alt="Destinazione 4"
+                  height="140px"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Giappone</h5>
+                  <p class="card-text">Il bel paese del sol levante</p>
+                  <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Esercizio 6-->
+
+      <section class="collapse.show multi-collapse" id="giorno">
+        <div class="container px-0 d-none d-md-block article">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title">Offerta del giorno</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <img
+                src="./assets/img/escursione-atollo.jpg"
+                alt="Destinazione 1"
+                class="rounded mb-4"
+                width="100%"
+              />
+            </div>
+            <div class="col-4">
+              <h2 class="fs-1 pb-2">Papua Nuova Guinea</h2>
+              <p class="font-monospace pb-2">19.12.2023 - 02.01.2023</p>
+              <h3 class="font-lead pb-2">
+                La tua vacanza dei sogni a partire da 1000€/settimana. Prenota
+                adesso per vivere il tuo natale dei sogni!
+              </h3>
+              <div class="badge bg-dark fs-5 rounded-pill">Best Offer</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Esercizio 9-->
+      <button
+        class="btn btn-primary d-block mb-4"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#offerta"
+        aria-expanded="false"
+        aria-controls="offerta"
+        id="btnOfferta"
+      >
+        Last Minute: Nascondi elemento
+      </button>
+      <section class="collapse.show" id="offerta">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title">Last Minute</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-2 article">
+              <img
+                src="./assets/img/download.jpg"
+                alt="Destinazione3"
+                class="img-fluid rounded shadow-lg mb-3"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 article">
+              <img
+                src="./assets/img/download.jpg"
+                alt="Destinazione3"
+                class="img-fluid rounded shadow-lg mb-3"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 article">
+              <img
+                src="./assets/img/download.jpg"
+                alt="Destinazione3"
+                class="img-fluid rounded shadow-lg mb-3"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 article">
+              <img
+                src="./assets/img/download.jpg"
+                alt="Destinazione3"
+                class="img-fluid rounded shadow-lg mb-3"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 article">
+              <img
+                src="./assets/img/download.jpg"
+                alt="Destinazione3"
+                class="img-fluid rounded shadow-lg mb-3"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 article">
+              <img
+                src="./assets/img/download.jpg"
+                alt="Destinazione3"
+                class="img-fluid rounded shadow-lg mb-3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Esercizio 10-->
+      <button
+        class="btn btn-primary d-block mb-4"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#recensioni"
+        aria-expanded="false"
+        aria-controls="recensioni"
+        id="btnRecensioni"
+      >
+        Recensioni: Nascondi elemento
+      </button>
+      <section class="collapse.show" id="recensioni">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title text-center">Dicono di noi</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                src="./assets/img/user2.png"
+                alt="userLogo"
+                class="img-top img-fluid"
+              />
+            </div>
+            <div class="col-11">
+              <h4>User</h4>
+              <p class="mb-5 pe-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorem aliquid minus cumque quod vitae reiciendis libero,
+                aperiam officiis in harum praesentium? Dicta quae sequi ea
+                debitis beatae aliquam quasi eum.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                src="./assets/img/user2.png"
+                alt="userLogo"
+                class="img-top img-fluid"
+              />
+            </div>
+            <div class="col-11">
+              <h4>User</h4>
+              <p class="mb-5 pe-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorem aliquid minus cumque quod vitae reiciendis libero,
+                aperiam officiis in harum praesentium? Dicta quae sequi ea
+                debitis beatae aliquam quasi eum.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                src="./assets/img/user2.png"
+                alt="userLogo"
+                class="img-top img-fluid"
+              />
+            </div>
+            <div class="col-11">
+              <h4>User</h4>
+              <p class="mb-5 pe-4">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolorem aliquid minus cumque quod vitae reiciendis libero,
+                aperiam officiis in harum praesentium? Dicta quae sequi ea
+                debitis beatae aliquam quasi eum.
+              </p>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <!--Esercizio 11-->
+    <footer>
+      <div class="container-fluid bg-dark text-center">
+        <button
+          class="rounded bg-transparent text-secondary border border-secondary p-2 mt-4" type="button" data-bs-toggle="modal" data-bs-target="#contattaci"
+        >
+          Contattaci
+        </button>
+        <p class="text-white p-4 m-0">
+          © 2023 Viaggit S.p.A. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <div class="modal fade" id="contattaci" tabindex="-1" aria-labelledby="contattaciLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contattaciLabel">Inviaci il tuo messaggio, ti ricontatteremo il primo possibile!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email-name" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email-name" placeholder="inserisci la tua email">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Messaggio:</label>
+                <textarea class="form-control" id="message-text" placeholder="Lascia il tuo messaggio"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script>
+      function conta() {
+        let articleNum = document.getElementsByClassName("article").length;
+        alert(`Al momento sono disponibili ${articleNum} destinazioni`);
+      }
+      /*
+      function rimuovi() {
+        let articleNum = document.getElementsByClassName("article").length;
+        console.log(articleNum);
+        articleNum.forEach(elimina());
+        function elimina(elemento, index, articleNum) { 
+          articleNum[index] = elemento.remove();
+        }
+        
+      }
+      */
+    </script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
 </html>
