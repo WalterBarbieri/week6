@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 1em;
+}
+nav img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
+
+.headerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#hero {
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */

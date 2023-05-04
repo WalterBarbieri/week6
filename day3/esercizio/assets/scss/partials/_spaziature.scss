@@ -1,0 +1,40 @@
+
+@mixin spacing($pad:0, $mar:0, $dis) {
+    padding: $pad;
+    margin: $mar;
+    display: $dis;
+}
+
+.standardFlex {
+    @include spacing(2em, 0, flex);
+    justify-content: space-between;
+    img {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+.ulFlex {
+    @include spacing(0, 0, flex);
+    li {
+        @include spacing(1em, 0, block);
+        a {
+            text-decoration: none;
+            color: $purple;
+        }
+    }
+}
+#headline {
+    @include spacing(2em, 0, block);
+    .buttons {
+        align-items: center;
+        display: flex;
+        justify-content: end;
+    }
+}
+main {
+    @include spacing(2em, 0, block);
+    .colonna {
+        @include spacing(1em, 0, block);
+    }
+}

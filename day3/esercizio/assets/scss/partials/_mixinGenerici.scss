@@ -1,0 +1,23 @@
+@mixin floating($x:0, $y:0, $z:0) {
+    border-radius: 45px;
+    box-shadow: 5+($x) 5+($y) 20px 5px black;
+    border: $z solid white;
+}
+.pippo {
+    @include floating(10px, 10px, 2px);
+}
+.pluto {
+    @include floating(5px, 5px , 0);
+}
+
+@import "../../bootstrap/scss/bootstrap.scss";
+
+@mixin griglia ($elementi) {
+    @include make-row; 
+    .colonna {
+        @include make-col($elementi)
+    }
+}
+.riga {
+    @include griglia(3);
+}

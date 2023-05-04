@@ -67,10 +67,14 @@
     </nav>
     <!--Esercizio 3-->
     <div class="container">
-      <button class="btn btn-primary mb-4" type="button" onclick="conta()">Destinazioni Disponibili</button>
-      <!--
-      <button class="btn btn-primary mb-4" type="button" onclick="rimuovi()">Nascondi Destinazioni Disponibili</button>
-      -->
+      <button class="btn btn-primary mb-4" type="button" onclick="conta()">
+        Destinazioni Disponibili
+      </button>
+
+      <button class="btn btn-primary mb-4" type="button" id="rimuovi">
+        Nascondi Destinazioni Disponibili
+      </button>
+
       <button
         class="btn btn-primary d-block mb-4"
         type="button"
@@ -81,7 +85,7 @@
         id="btnIntroduction"
       >
         Home: Nascondi elemento
-      </button>      
+      </button>
       <section class="bg-light py-5 mb-4 collapse.show" id="introduction">
         <div class="container">
           <div class="row align-items-center">
@@ -212,7 +216,7 @@
           </div>
           <div class="row">
             <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
-              <div class="card shadow-lg article">
+              <div class="card shadow-lg article hot">
                 <img
                   src="./assets/img/escursione-atollo.jpg"
                   class="card-img-top"
@@ -227,7 +231,7 @@
               </div>
             </div>
             <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
-              <div class="card shadow-lg article">
+              <div class="card shadow-lg article hot">
                 <img
                   src="./assets/img/giappone-tokyo-tempio-panorama.jpeg"
                   class="card-img-top"
@@ -242,7 +246,7 @@
               </div>
             </div>
             <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
-              <div class="card shadow-lg article">
+              <div class="card shadow-lg article hot">
                 <img
                   src="./assets/img/download.jpg"
                   class="card-img-top"
@@ -257,7 +261,7 @@
               </div>
             </div>
             <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
-              <div class="card shadow-lg article">
+              <div class="card shadow-lg article hot">
                 <img
                   src="./assets/img/hawaai.jpg"
                   class="card-img-top"
@@ -272,7 +276,7 @@
               </div>
             </div>
             <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
-              <div class="card shadow-lg article">
+              <div class="card shadow-lg article hot">
                 <img
                   src="./assets/img/escursione-atollo.jpg"
                   class="card-img-top"
@@ -287,7 +291,7 @@
               </div>
             </div>
             <div class="col-6 col-lg-4 col-xl-2 pb-3 border-0">
-              <div class="card shadow-lg article">
+              <div class="card shadow-lg article hot">
                 <img
                   src="./assets/img/giappone-tokyo-tempio-panorama.jpeg"
                   class="card-img-top"
@@ -479,7 +483,10 @@
     <footer>
       <div class="container-fluid bg-dark text-center">
         <button
-          class="rounded bg-transparent text-secondary border border-secondary p-2 mt-4" type="button" data-bs-toggle="modal" data-bs-target="#contattaci"
+          class="rounded bg-transparent text-secondary border border-secondary p-2 mt-4"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#contattaci"
         >
           Contattaci
         </button>
@@ -488,27 +495,57 @@
         </p>
       </div>
     </footer>
-    <div class="modal fade" id="contattaci" tabindex="-1" aria-labelledby="contattaciLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="contattaci"
+      tabindex="-1"
+      aria-labelledby="contattaciLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="contattaciLabel">Inviaci il tuo messaggio, ti ricontatteremo il primo possibile!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="contattaciLabel">
+              Inviaci il tuo messaggio, ti ricontatteremo il primo possibile!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
                 <label for="email-name" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email-name" placeholder="inserisci la tua email">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-name"
+                  placeholder="inserisci la tua email"
+                />
               </div>
               <div class="mb-3">
-                <label for="message-text" class="col-form-label">Messaggio:</label>
-                <textarea class="form-control" id="message-text" placeholder="Lascia il tuo messaggio"></textarea>
+                <label for="message-text" class="col-form-label"
+                  >Messaggio:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  placeholder="Lascia il tuo messaggio"
+                ></textarea>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
             <button type="button" class="btn btn-primary">Send message</button>
           </div>
         </div>
@@ -520,17 +557,27 @@
         let articleNum = document.getElementsByClassName("article").length;
         alert(`Al momento sono disponibili ${articleNum} destinazioni`);
       }
-      /*
-      function rimuovi() {
-        let articleNum = document.getElementsByClassName("article").length;
-        console.log(articleNum);
-        articleNum.forEach(elimina());
-        function elimina(elemento, index, articleNum) { 
-          articleNum[index] = elemento.remove();
-        }
-        
+
+      function badge() {
+        const span = document.createElement("span");
+        span.innerHTML = `<span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger text-white border border-light rounded">HOT!</span>`;
+
+        let hotArticle = document.getElementsByClassName("hot");
+        hotArticle.array.forEach((element) => {
+          element.appendChild(span);
+        });
       }
-      */
+
+      function removeElementsByClass(className) {
+        const elements = document.getElementsByClassName(className);
+        while (elements.length > 0) {
+          elements[0].parentNode.removeChild(elements[0]);
+        }
+      }
+      const rimuovi = document.getElementById('rimuovi');
+      rimuovi.addEventListener('click', function(){
+        removeElementsByClass('article');
+      })
     </script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>

@@ -1,0 +1,31 @@
+$mainColor: red;
+$secondaryColor: rgb(154, 238, 28);
+$font-stack: "Arial, Helvetica, sans-serif";
+
+p {
+    color: $mainColor;
+    font-family: $font-stack;
+    font-size: 15px;
+}
+
+span {
+    font-family: $font-stack;
+}
+
+div {
+    width: 150px;
+    background-color: $mainColor;
+}
+button {
+    background-color: $secondaryColor;
+}
+$colori:( 
+    'coloreSfondo': #123456,
+    'coloreTesto': red,
+    'coloreLink': blue
+
+);
+p {
+    color: map-get($colori, 'coloreTesto');
+    background-color: map-get($colori, 'coloreSfondo');
+}

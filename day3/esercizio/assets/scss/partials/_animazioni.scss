@@ -1,0 +1,19 @@
+@mixin animation($par1, $par2, $par3, $par4) {
+
+    animation: fadeIn $par1 ease-out $par4;
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY($par2);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY($par3);
+        }
+      }
+}
+
+.animate1 {
+    @include animation(4s, -500px, 0, 0);
+}
+//questo non funziona, ci proverò domani ma keyframes fadein non viene letto dall'animazione//
