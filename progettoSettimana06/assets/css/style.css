@@ -23,6 +23,8 @@ body {
 
 .headImg {
   height: 2em;
+  border-radius: 50%;
+  background-color: rgb(187, 184, 184);
 }
 
 #hero {
