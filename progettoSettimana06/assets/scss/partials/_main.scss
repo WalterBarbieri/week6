@@ -1,0 +1,55 @@
+aside {
+    padding-top: 1em;
+}
+.asideImg {
+    height: 2em;
+    padding: 0.5em;
+    margin-left: 1em;
+    background-color: #dfc06a;
+    border-radius: 50%;
+}
+.asideInfo {
+    h6, p {
+        margin: 0;
+        padding-left: 1em;
+    }
+    h6 {
+        font-weight: 700;
+    }
+}
+.cardInfo {
+    font-size: 0.9em;
+    border-bottom: 1px solid rgb(187, 184, 184);
+    margin-bottom: 1em;
+    p {
+        margin: 0;
+    }
+    p, img {
+        margin-right: 0.5em;
+    }
+    h6 {
+        font-weight: 700;
+        margin-bottom: 1.5em;
+    }
+    div {
+        margin-bottom: 1em;
+    }
+}
+.avatar {
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    +p {
+        margin: 0;
+    }
+}
+h2 {
+    padding-top: 1.5em;
+    font-weight: 700;
+}
+.last {
+    padding-bottom: 7em;
+    border-bottom: 1px solid rgb(187, 184, 184);
+
+}
+

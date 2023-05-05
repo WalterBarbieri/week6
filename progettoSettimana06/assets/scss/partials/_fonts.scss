@@ -1,0 +1,26 @@
+$white: white;
+$gray: #646161;
+$lightGray: gray;
+$large:(36px);
+$reg: (18px);
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+}
+#hero {
+    h1 {
+        color: $white;
+        font-size: $large;
+        font-weight: 700;
+    }
+    p {
+        color: $white;
+        font-size: $reg;
+    }
+}
+.gray {
+    color: $gray;
+}
+.lGray {
+    color: $lightGray;
+}

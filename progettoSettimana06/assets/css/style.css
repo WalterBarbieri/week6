@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+#hero p {
+  color: white;
+  font-size: 18px;
+}
+
+.gray {
+  color: #646161;
+}
+
+.lGray {
+  color: gray;
+}
+
+.headImg {
+  height: 2em;
+}
+
+#hero {
+  background-color: #7550FE;
+}
+#hero > div {
+  padding: 2em 3em 0 3em;
+}
+
+.bt1 {
+  position: absolute;
+  right: 1em;
+  top: 0.4em;
+  padding: 0.2em;
+}
+
+.icons {
+  position: absolute;
+  top: 0.8em;
+  right: 4em;
+}
+
+.button1 {
+  background-color: rgb(0, 179, 119);
+  color: white;
+  padding: 1em;
+}
+
+.button2 {
+  background-color: white;
+  padding: 1em;
+}
+
+aside {
+  padding-top: 1em;
+}
+
+.asideImg {
+  height: 2em;
+  padding: 0.5em;
+  margin-left: 1em;
+  background-color: #dfc06a;
+  border-radius: 50%;
+}
+
+.asideInfo h6, .asideInfo p {
+  margin: 0;
+  padding-left: 1em;
+}
+.asideInfo h6 {
+  font-weight: 700;
+}
+
+.cardInfo {
+  font-size: 0.9em;
+  border-bottom: 1px solid rgb(187, 184, 184);
+  margin-bottom: 1em;
+}
+.cardInfo p {
+  margin: 0;
+}
+.cardInfo p, .cardInfo img {
+  margin-right: 0.5em;
+}
+.cardInfo h6 {
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+.cardInfo div {
+  margin-bottom: 1em;
+}
+
+.avatar {
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.avatar + p {
+  margin: 0;
+}
+
+h2 {
+  padding-top: 1.5em;
+  font-weight: 700;
+}
+
+.last {
+  padding-bottom: 7em;
+  border-bottom: 1px solid rgb(187, 184, 184);
+}
+
+footer {
+  text-align: center;
+}
+footer li {
+  list-style-type: none;
+}
+footer li a {
+  text-decoration: none;
+  color: #646161;
+}/*# sourceMappingURL=style.css.map */
