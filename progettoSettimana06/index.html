@@ -36,7 +36,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-end">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -112,16 +112,18 @@
           </ul>
         </div>
         <div class="icons position-lg-static">
-          <img
-            class="img-fluid headImg"
+          <a href="#"><img
+            class="img-fluid headImg p-2"
             src="./assets/img/bell.svg"
             alt="campana notifica"
-          />
+          /><span class="position-absolute top-0 start-90 translate-middle p-1 bg-danger border border-light rounded-circle"></span></a>
+          <a href="#userModal" data-bs-toggle="modal" data-bs-target="#userModal">
           <img
             class="img-fluid headImg"
             src="./assets/img/avatar-1.jpg"
             alt="avatar1"
-          />
+          /><span class="position-absolute top-100 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
+            </a>
         </div>
       </nav>
       <!--HERO-->
@@ -133,7 +135,7 @@
               Hand-picked Instructor and expertly crafted courses, designed for
               the modern students and entrepreneur.
             </p>
-            <div>
+            <div >
               <button type="button" class="btn button1">Browse Courses</button>
               <button type="button" class="btn button2">
                 Are You Instructor?
@@ -191,8 +193,8 @@
         <div class="container">
           <h2>Recommended to you</h2>
           <div class="row">
-            <!--CARD-->
-            <div class="col-6 pt-4">
+            <!--CARD1-->
+            <div class="col-6 col-lg-3 pt-4">
               <div class="card">
                 <img
                   class="card-image-top img-fluid mb-2"
@@ -250,8 +252,8 @@
                 </div>
               </div>
             </div>
-            <!--CARD-->
-            <div class="col-6 pt-4">
+            <!--CARD2-->
+            <div class="col-6 col-lg-3 pt-4">
               <div class="card">
                 <img
                   class="card-image-top img-fluid mb-2"
@@ -312,11 +314,135 @@
                 </div>
               </div>
             </div>
+            <!--CARD3-->
+            <div class="col-6 col-lg-3 d-none d-lg-block pt-4">
+              <div class="card">
+                <img
+                  class="card-image-top img-fluid mb-2"
+                  src="./assets/img/course-node.jpg"
+                  alt="JS Logo"
+                />
+                <div class="cardInfo">
+                  <div class="container">
+                    <h6>Beginning Node.js, Express & mongoDB Development</h6>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/img/clock - black.svg"
+                        alt="logo clock black"
+                      />
+                      <p class="gray">2h 00m</p>
+                      <img
+                        src="./assets/img/bar-chart-fill.svg"
+                        alt="cart logo"
+                      />
+                      <p class="gray">Advanced</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img src="./assets/img/star.svg" alt="star logo" />
+                      <p>4.0</p>
+                      <p class="lGray">(15.700)</p>
+                    </div>
+                    <p>800$ <span class="lGray">$950</span></p>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="avatar"
+                      src="./assets/img/avatar-3.jpg"
+                      alt="avatar3"
+                    />
+                    <p class="gray">Another Nice Girl</p>
+                  </div>
+                  <img src="./assets/img/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
+            <!--CARD4-->
+            <div class="col-6 col-lg-3 d-none d-lg-block pt-4">
+              <div class="card">
+                <img
+                  class="card-image-top img-fluid mb-2"
+                  src="./assets/img/course-laravel.jpg"
+                  alt="JS Logo"
+                />
+                <div class="cardInfo">
+                  <div class="container">
+                    <h6>Laravel: The Ultimate Beginner's Guide to Learn</h6>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/img/clock - black.svg"
+                        alt="logo clock black"
+                      />
+                      <p class="gray">1h 00m</p>
+                      <img
+                        src="./assets/img/bar-chart.svg"
+                        alt="cart logo"
+                      />
+                      <p class="gray">Beginner</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img src="./assets/img/star-half.svg" alt="star half logo" />
+                      <p>4.5</p>
+                      <p class="lGray">(2,500)</p>
+                    </div>
+                    <p>170$ <span class="lGray">$220</span></p>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="avatar"
+                      src="./assets/img/avatar-7.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="gray">Sobo Rikhan</p>
+                  </div>
+                  <img src="./assets/img/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
           </div>
           <h2>Most Popular</h2>
           <div class="row">
-            <!--CARD-->
-            <div class="col-6 pt-4">
+            <!--CARD5-->
+            <div class="col-6 col-lg-3 pt-4">
               <div class="card">
                 <img
                   class="card-image-top img-fluid mb-2"
@@ -371,8 +497,8 @@
                 </div>
               </div>
             </div>
-            <!--CARD-->
-            <div class="col-6 pt-4">
+            <!--CARD6-->
+            <div class="col-6 col-lg-3 pt-4">
               <div class="card">
                 <img
                   class="card-image-top img-fluid mb-2"
@@ -433,11 +559,135 @@
                 </div>
               </div>
             </div>
+            <!--CARD7-->
+            <div class="col-6 col-lg-3 d-none d-lg-block pt-4">
+              <div class="card">
+                <img
+                  class="card-image-top img-fluid mb-2"
+                  src="./assets/img/course-node.jpg"
+                  alt="JS Logo"
+                />
+                <div class="cardInfo">
+                  <div class="container">
+                    <h6>Beginning Node.js, Express & mongoDB Development</h6>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/img/clock - black.svg"
+                        alt="logo clock black"
+                      />
+                      <p class="gray">2h 00m</p>
+                      <img
+                        src="./assets/img/bar-chart-fill.svg"
+                        alt="cart logo"
+                      />
+                      <p class="gray">Advanced</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img src="./assets/img/star.svg" alt="star logo" />
+                      <p>4.0</p>
+                      <p class="lGray">(15.700)</p>
+                    </div>
+                    <p>800$ <span class="lGray">$950</span></p>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="avatar"
+                      src="./assets/img/avatar-3.jpg"
+                      alt="avatar3"
+                    />
+                    <p class="gray">Another Nice Girl</p>
+                  </div>
+                  <img src="./assets/img/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
+            <!--CARD8-->
+            <div class="col-6 col-lg-3 d-none d-lg-block pt-4">
+              <div class="card">
+                <img
+                  class="card-image-top img-fluid mb-2"
+                  src="./assets/img/course-react.jpg"
+                  alt="React Logo"
+                />
+                <div class="cardInfo">
+                  <div class="container">
+                    <h6>How to easily create a website with React</h6>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/img/clock - black.svg"
+                        alt="logo clock black"
+                      />
+                      <p class="gray">3h 55m</p>
+                      <img
+                        src="./assets/img/bar-chart-fill.svg"
+                        alt="cart logo"
+                      />
+                      <p class="gray">Advanced</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img src="./assets/img/star-half.svg" alt="star half logo" />
+                      <p>4.5</p>
+                      <p class="lGray">(1,500)</p>
+                    </div>
+                    <p>600$ <span class="lGray">$750</span></p>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="avatar"
+                      src="./assets/img/avatar-8.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="gray">Another Nice Guy</p>
+                  </div>
+                  <img src="./assets/img/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
           </div>
           <h2>Trending</h2>
-          <div class="row last">
-            <!--CARD-->
-            <div class="col-6 pt-4">
+          <div class="row last h-25">
+            <!--CARD9-->
+            <div class="col-6 col-lg-3 pt-4">
               <div class="card">
                 <img
                   class="card-image-top img-fluid mb-2"
@@ -492,8 +742,8 @@
                 </div>
               </div>
             </div>
-            <!--CARD-->
-            <div class="col-6 pt-4">
+            <!--CARD10-->
+            <div class="col-6 col-lg-3 pt-4">
               <div class="card">
                 <img
                   class="card-image-top img-fluid mb-2"
@@ -548,6 +798,130 @@
                 </div>
               </div>
             </div>
+            <!--CARD11-->
+            <div class="col-6 col-lg-3 d-none d-lg-block pt-4">
+              <div class="card">
+                <img
+                  class="card-image-top img-fluid mb-2"
+                  src="./assets/img/course-node.jpg"
+                  alt="JS Logo"
+                />
+                <div class="cardInfo">
+                  <div class="container">
+                    <h6>Beginning Node.js, Express & mongoDB Development</h6>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/img/clock - black.svg"
+                        alt="logo clock black"
+                      />
+                      <p class="gray">2h 00m</p>
+                      <img
+                        src="./assets/img/bar-chart-fill.svg"
+                        alt="cart logo"
+                      />
+                      <p class="gray">Advanced</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img src="./assets/img/star.svg" alt="star logo" />
+                      <p>4.0</p>
+                      <p class="lGray">(15.700)</p>
+                    </div>
+                    <p>800$ <span class="lGray">$950</span></p>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="avatar"
+                      src="./assets/img/avatar-3.jpg"
+                      alt="avatar3"
+                    />
+                    <p class="gray">Another Nice Girl</p>
+                  </div>
+                  <img src="./assets/img/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
+            <!--CARD12-->
+            <div class="col-6 col-lg-3 d-none d-lg-block pt-4">
+              <div class="card">
+                <img
+                  class="card-image-top img-fluid mb-2"
+                  src="./assets/img/course-laravel.jpg"
+                  alt="JS Logo"
+                />
+                <div class="cardInfo">
+                  <div class="container">
+                    <h6>Laravel: The Ultimate Beginner's Guide to Learn</h6>
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="./assets/img/clock - black.svg"
+                        alt="logo clock black"
+                      />
+                      <p class="gray">1h 00m</p>
+                      <img
+                        src="./assets/img/bar-chart.svg"
+                        alt="cart logo"
+                      />
+                      <p class="gray">Beginner</p>
+                    </div>
+                    <div class="d-flex">
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img
+                        src="./assets/img/star-fill.svg"
+                        alt="star fill logo"
+                      />
+                      <img src="./assets/img/star-half.svg" alt="star half logo" />
+                      <p>4.5</p>
+                      <p class="lGray">(2,500)</p>
+                    </div>
+                    <p>170$ <span class="lGray">$220</span></p>
+                  </div>
+                </div>
+                <div
+                  class="container d-flex align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="avatar"
+                      src="./assets/img/avatar-7.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="gray">Sobo Rikhan</p>
+                  </div>
+                  <img src="./assets/img/bookmark.svg" alt="bookmark" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -561,6 +935,39 @@
         </ul>
       </footer>
     </main>
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="./assets/img/avatar-1.jpg" alt="avatar1">
+            <div>
+              <p>Annette Black</p>
+              <p class="lGray">annette@geeksui.com</p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center">
+              <img src="./assets/img/person.svg" alt="profile logo">
+              <p>Profile</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="./assets/img/star - black.svg" alt="star logo">
+              <p>Subscription</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="./assets/img/gear.svg" alt="gear logo">
+              <p>Settings</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex align-items-center">
+              <img src="./assets/img/power.svg" alt="power logo">
+              <p>Sign Out</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

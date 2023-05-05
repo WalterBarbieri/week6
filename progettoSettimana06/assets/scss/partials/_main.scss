@@ -5,7 +5,7 @@ aside {
     height: 2em;
     padding: 0.5em;
     margin-left: 1em;
-    background-color: #dfc06a;
+    background-color: #fde195;
     border-radius: 50%;
 }
 .asideInfo {
@@ -16,6 +16,9 @@ aside {
     h6 {
         font-weight: 700;
     }
+}
+.card {
+    height: 100%;
 }
 .cardInfo {
     font-size: 0.9em;

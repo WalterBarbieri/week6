@@ -1,3 +1,7 @@
+li {
+  font-weight: 700;
+  font-size: 1.2em;
+}
 .headImg {
   height: 2em;
   border-radius: 50%;
@@ -19,7 +23,7 @@
 .icons {
   position: absolute;
   top: 0.8em;
-  right: 4em;
+  right: 4.5em;
 }
 .button1 {
   background-color: rgb(0, 179, 119);
@@ -29,4 +33,13 @@
 .button2 {
   background-color: white;
   padding: 1em;
+}
+.button1:hover {
+  box-shadow: 2px 2px 10px 2px black;
+  background-color: rgb(0, 179, 119);
+  color: white;
+}
+.button2:hover {
+  box-shadow: 2px 2px 10px 2px black;
+  background-color: white;
 }

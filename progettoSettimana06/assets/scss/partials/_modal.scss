@@ -1,0 +1,25 @@
+.modal-content {
+    width: fit-content;
+    p {
+        margin-bottom: 0;
+        font-size: 1.2em;
+    }
+    img {
+        margin-right: 1em;
+    }
+}
+.modal-header {
+    img {
+        height: 3em;
+        border-radius: 50%;        
+    }
+
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+.modal-dialog {
+    margin-right: 0;
+    margin-left: auto;
+}
